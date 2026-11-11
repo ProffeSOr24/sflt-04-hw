@@ -1,0 +1,10 @@
+#cloud-config
+users:
+  - name: leonid
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICygJpdwzW+dSxDxO1d99DZZkc/uCH8RCQX5uu15YgMO
+package_update: true
+packages:
+  - nginx
